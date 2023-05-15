@@ -1,0 +1,111 @@
+﻿@model QLNS.ViewModels.NhanVienDetailViewModel
+
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <h4>NhanVien</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.NhanVien.TenNV)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.NhanVien.TenNV)
+            </dd>
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.NhanVien.GioiTinh)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.NhanVien.GioiTinh)
+            </dd>
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.NhanVien.NgaySinh)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.NhanVien.NgaySinh)
+            </dd>
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.NhanVien.DiaChi)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.NhanVien.DiaChi)
+            </dd>
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.NhanVien.MaNganh)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.NhanVien.MaNganh)
+            </dd>
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.NhanVien.MaBac)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.NhanVien.MaBac)
+            </dd>
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.NhanVien.HeSoLuong)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.NhanVien.HeSoLuong)
+            </dd>
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.NhanVien.PhuCap)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.NhanVien.PhuCap)
+            </dd>
+        </dl>
+        <div>
+            <a asp-action="Edit" asp-route-id="@Model?.NhanVien.MaNV">Edit</a> |
+            <a asp-action="Index">Back to List</a>
+        </div>
+     </div>
+<div class="col-md-6">
+    <h4>HopDongLaoDong</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.HopDongLaoDong.MaHDLD)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.HopDongLaoDong.MaHDLD)
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.HopDongLaoDong.LoaiHDLD)
+        </dt>
+        <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.HopDongLaoDong.LoaiHDLD)
+        </dd>
+        
+            <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.HopDongLaoDong.ThoiHan)
+</dt>
+<dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.HopDongLaoDong.ThoiHan)
+</dd>
+<dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.HopDongLaoDong.MaLuong)
+</dt>
+<dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.HopDongLaoDong.MaLuong)
+</dd>
+<dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.HopDongLaoDong.PhuCap)
+</dt>
+<dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.HopDongLaoDong.PhuCap)
+</dd>
+<dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.HopDongLaoDong.ChucVu)
+</dt>
+<dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.HopDongLaoDong.ChucVu)
+</dd>
+
+</div>
+</div>
